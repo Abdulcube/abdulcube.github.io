@@ -5,7 +5,7 @@ import { Homescreen, Profile } from './features';
 const App = () => {
   return <Routes>
     <Route index path='/' element={<Homescreen/>}/>
-    <Route path='/Profile' element={<Profile/>}/>
+    <Route path='/profile' element={<Profile/>}/>
   </Routes>
 }
 
