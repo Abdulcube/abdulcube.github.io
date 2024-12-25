@@ -1,13 +1,19 @@
-import './App.css';
-import { Route, Routes } from 'react-router';
-import { Homescreen, Profile } from './features';
+import "./App.css";
+import { Route, Routes } from "react-router";
+import { Homescreen, Profile } from "./features";
+import NavBar from "./features/NavBar/NavBar";
 
 const App = () => {
-  return <Routes>
-    <Route index path='/' element={<Homescreen/>}/>
-    <Route path='/profile' element={<Profile/>}/>
-  </Routes>
-}
+  return (
+    <Routes>
+      <Route path="/" element={<NavBar />}>
+        <Route index element={<Homescreen />} />
+        <Route path="/profile" element={<Profile />} />
+      </Route>
+    </Routes>
+  );
+};
+
 
 // function App() {
 //   return (
